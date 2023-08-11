@@ -4,7 +4,5 @@ spring:
     username: web_user
     url: jdbc:mariadb://127.0.0.1:3306/myDB
     password: '1234'
-  profiles:
-    active: prod
 server:
   port: '12000'
