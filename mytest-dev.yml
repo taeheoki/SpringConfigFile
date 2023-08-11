@@ -1,1 +1,2 @@
-bar : foo
+server:
+  port: '11000'
