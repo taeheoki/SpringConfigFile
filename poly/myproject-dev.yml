@@ -1,10 +1,21 @@
-spring:
-  datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    username: web_user
-    url: jdbc:mariadb://127.0.0.1:3306/myDB
-    password: '1234'
 server:
-  port: '12000'
+  port: 12100
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    beans:
+      enabled: true
+    info:
+      enabled: true
+  server:
+    address: localhost
+    port: 12101
 
 poly: 'BigData Dev! ChangeCode!'
