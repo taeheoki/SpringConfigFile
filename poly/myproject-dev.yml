@@ -1,5 +1,5 @@
 server:
-  port: 12100
+  port: 12110
 
 management:
   endpoints:
