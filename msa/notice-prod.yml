@@ -51,7 +51,7 @@ jwt:
     access:
       valid:
         time: '300'
-      name: jwtAcccessToken
+      name: jwtAccessToken
   secret:
     key: '"abcd1234abcd1234"'
 eureka:
