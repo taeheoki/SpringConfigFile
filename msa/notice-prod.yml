@@ -53,7 +53,7 @@ jwt:
         time: '300'
       name: jwtAccessToken
   secret:
-    key: '12345678123456781234567812345678'
+    key: 'ABCDEDFGABCDEDFGABCDEDFGABCDEDFG'
 eureka:
   client:
     fetch-registry: 'true'
