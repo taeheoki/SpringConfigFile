@@ -12,7 +12,7 @@ management:
     info:
       enabled: 'true'
     shutdown:
-      enabled: true
+      enabled: true #Graceful Shutdown
   server:
     address: localhost
     port: '11001'
