@@ -11,6 +11,8 @@ management:
       enabled: 'true'
     info:
       enabled: 'true'
+    shutdown:
+      enabled: true
   server:
     address: localhost
     port: '12001'
@@ -39,11 +41,6 @@ spring:
     url: jdbc:mariadb://localhost:3306/myDB
   application:
     name: NOTICE-SERVICE
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-  lifecycle:
-    timeout-per-shutdown-phase: 20s
 jwt:
   token:
     creator: poly
@@ -65,6 +62,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 server:
   port: '12000'
-  shutdown: graceful
 
 
