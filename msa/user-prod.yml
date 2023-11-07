@@ -11,6 +11,8 @@ management:
       enabled: 'true'
     info:
       enabled: 'true'
+    shutdown:
+      enabled: true
   server:
     address: localhost
     port: '11001'
@@ -38,8 +40,6 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-  lifecycle:
-    timeout-per-shutdown-phase: 20s
 jwt:
   token:
     creator: poly
@@ -61,4 +61,3 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 server:
   port: '11000'
-  shutdown: graceful
