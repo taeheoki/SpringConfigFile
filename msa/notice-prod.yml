@@ -42,6 +42,8 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
 jwt:
   token:
     creator: poly
@@ -63,5 +65,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 server:
   port: '12000'
+  shutdown: graceful
 
 
