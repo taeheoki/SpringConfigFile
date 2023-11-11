@@ -40,7 +40,7 @@ spring:
   boot:
     admin:
       client: # Spring Boot Actuator Admin UI Server
-        url=http://localhost:15000
+        url: http://localhost:15000
 jwt:
   token:
     creator: poly
