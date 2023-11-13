@@ -44,7 +44,7 @@ spring:
 jwt:
   token:
     access:
-      name: jwtAccessToken
+      name: 'jwtAccessToken'
 eureka:
   client:
     fetch-registry: 'true'
