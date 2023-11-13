@@ -5,12 +5,12 @@ management:
         include: '*'
   endpoint:
     health:
-      enabled: 'true'
+      enabled: true
       show-details: always
     beans:
-      enabled: 'true'
+      enabled: true
     info:
-      enabled: 'true'
+      enabled: true
     shutdown:
       enabled: true
   server:
@@ -43,17 +43,8 @@ spring:
         url: http://localhost:15000
 jwt:
   token:
-    creator: poly
-    refresh:
-      valid:
-        time: '3000'
-      name: jwtRefreshToken
     access:
-      valid:
-        time: '300'
       name: jwtAccessToken
-  secret:
-    key: '12345678123456781234567812345678123456781234'
 eureka:
   client:
     fetch-registry: 'true'
