@@ -2,13 +2,13 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: '*' # 어떠한 URL로의 접근이든 허용한다는 의미, 그러나 특정 URL에 대한 접근을 조작할 경우에는 Security를 활용하여 보안을 설정하는 편이다.
   endpoint:
     health:
-      enabled: true
-      show-details: always
+      enabled: true # 애플리케이션이 정상적으로 작동하는지 여부를 확인
+      show-details: always # 엔드포인트에 대한 요청에 대해 상세한 상태 정보를 반환
     beans:
-      enabled: true
+      enabled: true # 애플리케이션 내에서 사용 가능한 모든 Spring 빈(bean)의 목록을 제공
     info:
       enabled: true
     shutdown:
@@ -21,7 +21,8 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka
-    fetch-registry: true
+    fetch-registry: true  # Eureka 서버의 레지스트리 정보를 조회, 라우팅을 위한 설정은 아니나, Eureka 서버에 등록된 다른 서비스에 대한 정보를 가져오는 역할을 한다.
+                          # 라우팅의 경우에는 다른 규칙 설정을 통해 동작을 규정한다.
 spring:
   application:
     name: API-GATEWAY
